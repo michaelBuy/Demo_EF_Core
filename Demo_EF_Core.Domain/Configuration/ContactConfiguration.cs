@@ -9,7 +9,8 @@ namespace Demo_EF_Core.Domain.Configuration
     {
         public override void Configure(EntityTypeBuilder<Contact> builder)
         {
-            builder.ToTable("Contact");
+            builder.ToTable("Contact");           
+                
 
             builder.Property(c => c.EmailContact)
                 .IsRequired()

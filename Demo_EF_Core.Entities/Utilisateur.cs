@@ -13,5 +13,6 @@ namespace Demo_EF_Core.Entities
         public string? Prenom { get; set; }
         public string? Email { get; set; }
         public string? Passwd { get; set; }
+        public ICollection<Categorie>? Categories { get; set; } = new List<Categorie>();
     }
 }
